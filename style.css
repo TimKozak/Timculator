@@ -1,0 +1,158 @@
+.main-grid {
+  padding: 3px;
+  display: grid;
+  background-color: #bdc6ce;
+
+  /* We need to write 3 headers because the maximum amount of items per column is 4 */
+  grid-template-areas:
+    "header header header header"
+    "result result result result"
+    "clear-all clear-entry backspace divide"
+    "number-7 number-8 number-9 multiply"
+    "number-4 number-5 number-6 subtract"
+    "number-1 number-2 number-3 add"
+    "comma number-0 equals equals";
+
+  grid-gap: 1px;
+
+  border-radius: 25px;
+}
+
+/* GRID AREAS */
+#header {
+  grid-area: header;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 25px 25px 0px 0px;
+  background-color: #394351;
+}
+#result {
+  grid-area: result;
+}
+#clear-all-operator {
+  grid-area: clear-all;
+  color: #fff;
+  font-weight: bold;
+}
+
+#clear-entry-operator {
+  grid-area: clear-entry;
+  color: #ea4b6f;
+  font-weight: bold;
+}
+#backspace-operator {
+  grid-area: backspace;
+  color: #fff;
+}
+#divide-operator {
+  grid-area: divide;
+}
+#multiply-operator {
+  grid-area: multiply;
+}
+#subtract-operator {
+  grid-area: subtract;
+}
+#add-operator {
+  grid-area: add;
+}
+#number-1 {
+  grid-area: number-1;
+}
+#number-2 {
+  grid-area: number-2;
+}
+#number-3 {
+  grid-area: number-3;
+}
+#number-4 {
+  grid-area: number-4;
+}
+#number-5 {
+  grid-area: number-5;
+}
+#number-6 {
+  grid-area: number-6;
+}
+#number-7 {
+  grid-area: number-7;
+}
+#number-8 {
+  grid-area: number-8;
+}
+#number-9 {
+  grid-area: number-9;
+}
+#number-0 {
+  grid-area: number-0;
+}
+#comma {
+  grid-area: comma;
+}
+#submit-button {
+  grid-area: equals;
+}
+
+.square {
+  padding: 25px 10px 25px 10px;
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.btn-block + .btn-block {
+  margin-top: 0px;
+}
+
+.btn:hover {
+  color: #ccc;
+}
+
+.result {
+  background-color: #525c67;
+  text-align: right;
+  padding-right: 30px;
+  display: block;
+}
+
+.operator {
+  background-color: #394351;
+  color: #a6aeb3;
+  text-align: center;
+}
+
+.button {
+  background-color: #5e6a7b;
+  color: #fff;
+  text-align: center;
+}
+
+.submit {
+  background: linear-gradient(90deg, #ea4b6f, #f0aa4a);
+  color: #fff;
+  text-align: center;
+}
+
+.result-number {
+  color: #fff;
+  margin-bottom: 0px;
+  font-size: 5rem;
+}
+
+.right-corner {
+  border-radius: 0px 0px 25px 0px;
+}
+
+.left-corner {
+  border-radius: 0px 0px 0px 25px;
+}
+
+.darkened {
+  background: #29303a;
+}

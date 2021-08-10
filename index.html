@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- FontAwesome CSS -->
+  <script src="https://kit.fontawesome.com/ec2f8f4143.js" crossorigin="anonymous"></script>
+
+  <!-- Native CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <div class="container my-5 mx-auto ">
+    <div class="main-grid">
+      <div id="header" class="square">TIMCULATOR</div>
+      <div id="result" class="square result">
+        <h1 id="result-number" class="result-number">0</h1>
+      </div>
+      <button id="clear-all-operator" class="square btn btn-block operator">C</button>
+      <button id="clear-entry-operator" class="square btn btn-block operator">CE</button>
+      <button id="backspace-operator" class="square btn btn-block operator"><i class="fas fa-backspace"></i></button>
+      <button id="divide-operator" class="square btn btn-block operator">%</button>
+      <button id="number-7" class="square number btn btn-block button">7</button>
+      <button id="number-8" class="square number btn btn-block button">8</button>
+      <button id="number-9" class="square number btn btn-block button">9</button>
+      <button id="multiply-operator" class="square btn btn-block operator">X</button>
+      <button id="number-4" class="square number btn btn-block button">4</button>
+      <button id="number-5" class="square number btn btn-block button">5</button>
+      <button id="number-6" class="square number btn btn-block button">6</button>
+      <button id="subtract-operator" class="square btn btn-block operator">-</button>
+      <button id="number-1" class="square number btn btn-block button">1</button>
+      <button id="number-2" class="square number btn btn-block button">2</button>
+      <button id="number-3" class="square number btn btn-block button">3</button>
+      <button id="add-operator" class="square btn btn-block operator">+</button>
+      <button id="comma" class=" square btn btn-block operator left-corner">,</button>
+      <button id="number-0" class="square number btn btn-block button">0</button>
+      <button id="submit-button" class="square btn btn-block submit right-corner">=</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- Native JS -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
